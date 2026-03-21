@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakesh Law Foundation — Justice & Equity · Chennai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Latha&family=Noto+Serif+Tamil:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- READING PROGRESS -->
+<div id="reading-progress"><div id="reading-progress-bar"></div></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">
+    <div>
+      <div class="nav-logo-main" data-en="Rakesh<span> Law</span>" data-ta="ரகேஷ்<span> சட்டம்</span>">Rakesh<span> Law</span></div>
+      <span class="nav-logo-sub" data-en="Foundation · Chennai · Est. 2022" data-ta="அறக்கட்டளை · சென்னை · நிறுவப்பட்டது 2022">Foundation · Chennai · Est. 2022</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about" data-en="About" data-ta="பற்றி">About</a></li>
+    <li><a href="#partners" data-en="Partners" data-ta="கூட்டாளிகள்">Partners</a></li>
+    <li><a href="#lectures" data-en="Lectures" data-ta="சொற்பொழிவுகள்">Lectures</a></li>
+    <li><a href="#upcoming" data-en="Upcoming" data-ta="வருங்கால">Upcoming</a></li>
+    <li><a href="#news" data-en="News" data-ta="செய்திகள்">News</a></li>
+    <li><a href="#press" data-en="Press" data-ta="பத்திரிகை">Press</a></li>
+    <li><a href="#events" data-en="Events" data-ta="நிகழ்வுகள்">Events</a></li>
+    <li><a href="#resources" data-en="Resources" data-ta="வளங்கள்">Resources</a></li>
+    <li><a href="#coordinators" data-en="Team" data-ta="குழு">Team</a></li>
+    <li><a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a></li>
+  </ul>
+
+  <div class="nav-controls">
+    <!-- Font Size Controls -->
+    <div class="font-controls" title="Adjust text size">
+      <button class="font-btn" onclick="changeFontSize(-1)" aria-label="Decrease font size">A<sup>−</sup></button>
+      <button class="font-btn font-btn-mid" onclick="resetFontSize()" aria-label="Reset font size">A</button>
+      <button class="font-btn" onclick="changeFontSize(1)" aria-label="Increase font size">A<sup>+</sup></button>
+    </div>
+    <!-- Language Toggle -->
+    <button class="lang-toggle" id="langToggle" onclick="toggleLang()" title="Switch Language">
+      <span class="lang-en">EN</span>
+      <span class="lang-divider">|</span>
+      <span class="lang-ta">த</span>
+    </button>
+    <!-- Dark/Light Toggle -->
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle dark/light mode">
+      <span class="theme-icon-sun">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </span>
+      <span class="theme-icon-moon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </span>
+    </button>
+    <a href="#contact" class="nav-cta" data-en="Get in Touch" data-ta="தொடர்பு கொள்ளுங்கள்">Get in Touch</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow" data-en="Rakesh Law Foundation · Chennai, Tamil Nadu · 16 April 2022" data-ta="ரகேஷ் சட்ட அறக்கட்டளை · சென்னை, தமிழ்நாடு · 16 ஏப்ரல் 2022">Rakesh Law Foundation · Chennai, Tamil Nadu · 16 April 2022</p>
+    <h1 class="hero-title">
+      <span data-en="Advancing" data-ta="முன்னேற்றுகிறோம்">Advancing</span><br>
+      <em data-en="Justice" data-ta="நீதி">Justice</em>
+      <span data-en="&amp;" data-ta="&amp;">&amp;</span><br>
+      <span data-en="Equity" data-ta="சமத்துவம்">Equity</span>
+    </h1>
+    <p class="hero-desc" data-en="A legal research and educational trust dedicated to constitutional values, judicial transparency, and criminal justice reform — founded in memory of Rakesh by Senior Advocate N.R. Elango." data-ta="ரகேஷின் நினைவாக மூத்த வழக்கறிஞர் என்.ஆர். எழாங்கோவால் நிறுவப்பட்ட இந்த அறக்கட்டளை, அரசியலமைப்பு மதிப்புகள், நீதித்துறை வெளிப்படைத்தன்மை மற்றும் குற்றவியல் நீதி சீர்திருத்தத்திற்கு அர்ப்பணிக்கப்பட்டுள்ளது.">A legal research and educational trust dedicated to constitutional values, judicial transparency, and criminal justice reform — founded in memory of Rakesh by Senior Advocate N.R. Elango.</p>
+    <div class="hero-actions">
+      <a href="#lectures" class="btn-primary" data-en="Explore Lectures" data-ta="சொற்பொழிவுகளை காண்க">Explore Lectures</a>
+      <a href="#upcoming" class="btn-outline" data-en="Upcoming Event" data-ta="வருங்கால நிகழ்வு">Upcoming Event</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <p class="hero-stat-label" data-en="Founding Vision" data-ta="நிறுவுதல் நோக்கம்">Founding Vision</p>
+    <blockquote class="hero-quote" data-en="&ldquo;Justice is not blind — it is the clearest vision of a civilised society.&rdquo;" data-ta="&ldquo;நீதி குருடு அல்ல — அது ஒரு நாகரிக சமுதாயத்தின் தெளிவான பார்வை.&rdquo;">"Justice is not blind — it is the clearest vision of a civilised society."</blockquote>
+    <p class="hero-quote-attr" data-en="— Rakesh Law Foundation Mission" data-ta="— ரகேஷ் சட்ட அறக்கட்டளை நோக்கம்">— Rakesh Law Foundation Mission</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">4</span>
+        <span class="hero-stat-text" data-en="Annual Lectures" data-ta="ஆண்டு சொற்பொழிவுகள்">Annual Lectures</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">3</span>
+        <span class="hero-stat-text" data-en="Partners" data-ta="கூட்டாளிகள்">Partners</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">3+</span>
+        <span class="hero-stat-text" data-en="Years of Impact" data-ta="தாக்க ஆண்டுகள்">Years of Impact</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-frame">
+          <div class="about-img-placeholder">
+            <div class="about-scales-icon">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="37" y="8" width="6" height="60" rx="3" fill="currentColor" opacity="0.25"/>
+                <rect x="16" y="8" width="48" height="5" rx="2.5" fill="currentColor" opacity="0.35"/>
+                <circle cx="40" cy="10" r="4" fill="currentColor" opacity="0.5"/>
+                <line x1="40" y1="10" x2="18" y2="32" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+                <line x1="40" y1="10" x2="62" y2="32" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+                <ellipse cx="18" cy="34" rx="12" ry="6" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                <ellipse cx="62" cy="36" rx="12" ry="6" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                <rect x="33" y="66" width="14" height="4" rx="2" fill="currentColor" opacity="0.4"/>
+              </svg>
+            </div>
+            <p data-en="Law · Justice · Equity" data-ta="சட்டம் · நீதி · சமத்துவம்">Law · Justice · Equity</p>
+          </div>
+        </div>
+        <div class="about-frame-border"></div>
+        <div class="about-badge">
+          <span class="about-badge-num">3+</span>
+          <span class="about-badge-text" data-en="Years of Impact" data-ta="தாக்க ஆண்டுகள்">Years of Impact</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-header">
+          <p class="section-tag" data-en="Our Foundation" data-ta="எங்கள் அறக்கட்டளை">Our Foundation</p>
+          <h2 class="section-title">
+            <span data-en="A Legacy of" data-ta="ஒரு பாரம்பரியம்">A Legacy of</span><br>
+            <em data-en="Legal Excellence" data-ta="சட்ட சிறப்பு">Legal Excellence</em>
+          </h2>
+        </div>
+        <p class="about-lead" data-en="Founded on 1 May 2022 by Senior Advocate N.R. Elango in memory of his son Rakesh, the Rakesh Law Foundation stands as a beacon of legal education and constitutional awareness in Chennai." data-ta="மூத்த வழக்கறிஞர் என்.ஆர். எழாங்கோவால் தனது மகன் ரகேஷின் நினைவாக 1 மே 2022 அன்று நிறுவப்பட்ட ரகேஷ் சட்ட அறக்கட்டளை சென்னையில் சட்டக் கல்வி மற்றும் அரசியலமைப்பு விழிப்புணர்வின் விளக்காய் திகழ்கிறது.">Founded on 1 May 2022 by Senior Advocate N.R. Elango in memory of his son Rakesh, the Rakesh Law Foundation stands as a beacon of legal education and constitutional awareness in Chennai.</p>
+        <p class="about-body" data-en="Inaugurated in the presence of Chief Minister M.K. Stalin, the foundation operates at the intersection of legal academia, public policy, and civic engagement — bringing together the judiciary, bar, and academia under one roof. Registered as a charitable trust, it maintains tax-exempt status under Section 12AB of the Income Tax Act." data-ta="முதலமைச்சர் மு.க. ஸ்டாலின் முன்னிலையில் திறக்கப்பட்ட இந்த அறக்கட்டளை, சட்ட கல்வி, பொது கொள்கை மற்றும் குடிமை ஈடுபாட்டின் சந்திப்பில் செயல்படுகிறது. 12AB பிரிவின் கீழ் பதிவு செய்யப்பட்ட அறக்கட்டளை.">Inaugurated in the presence of Chief Minister M.K. Stalin, the foundation operates at the intersection of legal academia, public policy, and civic engagement — bringing together the judiciary, bar, and academia under one roof. Registered as a charitable trust, it maintains tax-exempt status under Section 12AB of the Income Tax Act.</p>
+        <div class="about-mission">
+          <p class="about-mission-label" data-en="Our Mission" data-ta="எங்கள் நோக்கம்">Our Mission</p>
+          <p class="about-mission-text" data-en="&ldquo;To promote justice and equity through legal education, constitutional scholarship, and community awareness — honouring the memory of Rakesh.&rdquo;" data-ta="&ldquo;சட்டக் கல்வி, அரசியலமைப்பு ஆராய்ச்சி மற்றும் சமுதாய விழிப்புணர்வு மூலம் நீதி மற்றும் சமத்துவத்தை மேம்படுத்துதல் — ரகேஷின் நினைவை போற்றுதல்.&rdquo;">"To promote justice and equity through legal education, constitutional scholarship, and community awareness — honouring the memory of Rakesh."</p>
+        </div>
+        <p class="about-body" data-en="From flagship endowment lectures featuring Supreme Court judges to moot court competitions conducted in Tamil, the foundation nurtures the complete legal mind — equally versed in scholarship and humanity." data-ta="உச்ச நீதிமன்ற நீதிபதிகளை உள்ளடக்கிய முக்கிய நிறுவனப் பொழிவுகளிலிருந்து தமிழில் நடத்தப்படும் மூட் கோர்ட் போட்டிகள் வரை, அறக்கட்டளை முழுமையான சட்ட மனதை வளர்க்கிறது.">From flagship endowment lectures featuring Supreme Court judges to moot court competitions conducted in Tamil, the foundation nurtures the complete legal mind — equally versed in scholarship and humanity.</p>
+        <div class="partner-strip reveal">
+          <div class="partner-logo"><div class="partner-logo-name">RMRL</div></div>
+          <div class="partner-divider">×</div>
+          <div class="partner-logo"><div class="partner-logo-name">SOEL</div></div>
+          <div class="partner-divider">×</div>
+          <div class="partner-logo"><div class="partner-logo-name">TNDALU</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Our Collaborators" data-ta="எங்கள் ஒத்துழைப்பாளர்கள்">Our Collaborators</p>
+      <h2 class="section-title">
+        <span data-en="Institutional" data-ta="நிறுவன">Institutional</span>
+        <em data-en="Partners" data-ta="கூட்டாளிகள்"> Partners</em>
+      </h2>
+      <p class="section-sub" data-en="Powerful alliances that amplify legal education and justice discourse across Tamil Nadu and beyond." data-ta="தமிழ்நாடு முழுவதும் சட்டக் கல்வி மற்றும் நீதி உரையாடலை வலுப்படுத்தும் சக்திவாய்ந்த கூட்டணிகள்.">Powerful alliances that amplify legal education and justice discourse across Tamil Nadu and beyond.</p>
+    </div>
+    <div class="partners-grid">
+      <div class="partner-card reveal">
+        <div class="partner-card-initial">R</div>
+        <h3 class="partner-card-name">RMRL</h3>
+        <p class="partner-card-full" data-en="Roja Muthiah Research Library" data-ta="ரோஜா முத்தையா ஆராய்ச்சி நூலகம்">Roja Muthiah Research Library</p>
+        <p class="partner-card-desc" data-en="One of South Asia's most distinguished research libraries and the co-host of the annual Rakesh Endowment Lecture Series — providing venue, archival resources, and scholarly credibility to the foundation's mission." data-ta="தென் ஆசியாவின் மிகவும் புகழ்பெற்ற ஆராய்ச்சி நூலகங்களில் ஒன்று மற்றும் வார்ஷிக ரகேஷ் நிறுவன சொற்பொழிவு தொடரின் இணை நடத்துனர்.">One of South Asia's most distinguished research libraries and the co-host of the annual Rakesh Endowment Lecture Series — providing venue, archival resources, and scholarly credibility to the foundation's mission.</p>
+      </div>
+      <div class="partner-card reveal reveal-delay-1">
+        <div class="partner-card-initial">S</div>
+        <h3 class="partner-card-name">SOEL</h3>
+        <p class="partner-card-full" data-en="School of Excellence in Law" data-ta="சட்டத்தில் சிறப்பு பள்ளி">School of Excellence in Law</p>
+        <p class="partner-card-desc" data-en="The foundation's primary academic partner for clinical legal education. SOEL hosts the Tamil Moot Court Criminal Trial competitions, giving law students hands-on courtroom and advocacy experience." data-ta="மருத்துவ சட்டக் கல்விக்கான அறக்கட்டளையின் முதன்மை கல்வி கூட்டாளி. SOEL தமிழ் மூட் கோர்ட் குற்றவியல் விசாரணை போட்டிகளை நடத்துகிறது.">The foundation's primary academic partner for clinical legal education. SOEL hosts the Tamil Moot Court Criminal Trial competitions, giving law students hands-on courtroom and advocacy experience.</p>
+      </div>
+      <div class="partner-card reveal reveal-delay-2">
+        <div class="partner-card-initial">T</div>
+        <h3 class="partner-card-name">TNDALU</h3>
+        <p class="partner-card-full" data-en="Tamil Nadu Dr. Ambedkar Law University" data-ta="தமிழ்நாடு டாக்டர் அம்பேத்கர் சட்டப் பல்கலைக்கழகம்">Tamil Nadu Dr. Ambedkar Law University</p>
+        <p class="partner-card-desc" data-en="Collaborating with the state's premier law university to extend the foundation's reach into law school curricula, student competitions, and research initiatives across Tamil Nadu." data-ta="மாநிலத்தின் முதன்மை சட்டப் பல்கலைக்கழகத்துடன் இணைந்து அறக்கட்டளையின் தாக்கத்தை சட்டப் பள்ளி பாடத்திட்டங்களில் விரிவுபடுத்துகிறோம்.">Collaborating with the state's premier law university to extend the foundation's reach into law school curricula, student competitions, and research initiatives across Tamil Nadu.</p>
+      </div>
+      <div class="partner-card reveal reveal-delay-3">
+        <div class="partner-card-initial">தமிழ்</div>
+        <h3 class="partner-card-name" data-en="Tamil Moot Court" data-ta="தமிழ் மூட் கோர்ட்">Tamil Moot Court</h3>
+        <p class="partner-card-full" data-en="Tamil Language Moot Court Initiative" data-ta="தமிழ் மொழி மூட் கோர்ட் முயற்சி">Tamil Language Moot Court Initiative</p>
+        <p class="partner-card-desc" data-en="A pioneering initiative conducting criminal trial moot court proceedings — celebrating Tamil legal heritage and advocating for regional language access to legal education and the judicial process." data-ta="குற்றவியல் விசாரணை மூட் கோர்ட் நடவடிக்கைகளை நடத்தும் முன்னோடி முயற்சி — தமிழ் சட்ட பாரம்பரியத்தை கொண்டாடுகிறது.">A pioneering initiative conducting criminal trial moot court proceedings — celebrating Tamil legal heritage and advocating for regional language access to legal education and the judicial process.</p>
+      </div>
+      <div class="partner-card reveal reveal-delay-4">
+        <div class="partner-card-initial">MHC</div>
+        <h3 class="partner-card-name" data-en="Madras High Court" data-ta="சென்னை உயர் நீதிமன்றம்">Madras High Court</h3>
+        <p class="partner-card-full" data-en="Supporting Judicial Dignitaries" data-ta="நீதித்துறை பிரமுகர்கள் ஆதரவு">Supporting Judicial Dignitaries</p>
+        <p class="partner-card-desc" data-en="Judges of the Madras High Court — including Justice Anita Sumanth and Justice N. Anand Venkatesh — have graced foundation events, lending judicial authority to its programmes." data-ta="நீதிபதி அனிதா சுமந்த் மற்றும் நீதிபதி என். ஆனந்த் வெங்கடேஷ் உள்ளிட்ட சென்னை உயர் நீதிமன்ற நீதிபதிகள் அறக்கட்டளை நிகழ்வுகளை அலங்கரித்துள்ளனர்.">Judges of the Madras High Court — including Justice Anita Sumanth and Justice N. Anand Venkatesh — have graced foundation events, lending judicial authority to its programmes.</p>
+      </div>
+      <div class="partner-card reveal reveal-delay-4">
+        <div class="partner-card-initial">OA</div>
+        <h3 class="partner-card-name" data-en="Open Access" data-ta="திறந்த அணுகல்">Open Access</h3>
+        <p class="partner-card-full" data-en="Knowledge Without Barriers" data-ta="தடைகளற்ற அறிவு">Knowledge Without Barriers</p>
+        <p class="partner-card-desc" data-en="All foundation events are documented and made accessible to the public — because the foundation believes constitutional knowledge must be democratised across all sections of society." data-ta="அனைத்து அறக்கட்டளை நிகழ்வுகளும் ஆவணப்படுத்தப்பட்டு பொதுமக்களுக்கு அணுகக்கூடியதாக ஆக்கப்படுகின்றன — அரசியலமைப்பு அறிவு சமுதாயத்தின் அனைத்து பிரிவுகளிலும் ஜனநாயகமயமாக்கப்பட வேண்டும்.">All foundation events are documented and made accessible to the public — because the foundation believes constitutional knowledge must be democratised across all sections of society.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LECTURES -->
+<section id="lectures">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Archive" data-ta="காப்பகம்">Archive</p>
+      <h2 class="section-title">
+        <span data-en="Rakesh Endowment" data-ta="ரகேஷ் நிறுவன">Rakesh Endowment</span>
+        <em data-en=" Lecture Series" data-ta=" சொற்பொழிவு தொடர்"> Lecture Series</em>
+      </h2>
+      <p class="section-sub" data-en="Held annually in April at RMRL, Chennai — featuring former Supreme Court and High Court judges on constitutional law and justice. Click each card to read the minutes." data-ta="ஆண்டுதோறும் ஏப்ரல் மாதம் RMRL சென்னையில் நடைபெறுகிறது — அரசியலமைப்பு சட்டம் மற்றும் நீதி குறித்து முன்னாள் உச்ச நீதிமன்ற நீதிபதிகளுடன்.">Held annually in April at RMRL, Chennai — featuring former Supreme Court and High Court judges on constitutional law and justice. Click each card to read the minutes.</p>
+    </div>
+    <div class="lectures-layout">
+      <div class="lectures-sidebar">
+        <div class="year-tabs">
+          <button class="year-tab active" onclick="showYear('2025',event)" data-en="2025 · 4th Edition" data-ta="2025 · 4ஆம் பதிப்பு">2025 · 4th Edition</button>
+          <button class="year-tab" onclick="showYear('2024',event)" data-en="2024 · 3rd Edition" data-ta="2024 · 3ஆம் பதிப்பு">2024 · 3rd Edition</button>
+          <button class="year-tab" onclick="showYear('2023',event)" data-en="2023 · 2nd Edition" data-ta="2023 · 2ஆம் பதிப்பு">2023 · 2nd Edition</button>
+          <button class="year-tab" onclick="showYear('2022',event)" data-en="2022 · 1st Edition" data-ta="2022 · 1ஆம் பதிப்பு">2022 · 1st Edition</button>
+        </div>
+        <div class="sidebar-box">
+          <p class="sidebar-box-label" data-en="Series Host Venue" data-ta="தொடர் தொகுப்பு இடம்">Series Host Venue</p>
+          <p data-en="Roja Muthiah Research Library<br><span>Taramani, Chennai, Tamil Nadu</span>" data-ta="ரோஜா முத்தையா ஆராய்ச்சி நூலகம்<br><span>தரமணி, சென்னை, தமிழ்நாடு</span>">Roja Muthiah Research Library<br><span>Taramani, Chennai, Tamil Nadu</span></p>
+        </div>
+        <div class="sidebar-box">
+          <p class="sidebar-box-label" data-en="Frequency" data-ta="அலைவெண்">Frequency</p>
+          <p data-en="Annual — <span>Held every April</span>" data-ta="வார்ஷிக — <span>ஒவ்வொரு ஏப்ரலிலும்</span>">Annual — <span>Held every April</span></p>
+        </div>
+        <div class="sidebar-box">
+          <p class="sidebar-box-label" data-en="Media Coverage" data-ta="ஊடக செய்திகள்">Media Coverage</p>
+          <p class="sidebar-note" data-en="Event recordings available via Red Pix 24x7 and TNDALU Media on YouTube." data-ta="நிகழ்வு பதிவுகள் YouTube-ல் Red Pix 24x7 மற்றும் TNDALU Media மூலம் கிடைக்கின்றன.">Event recordings available via Red Pix 24x7 and TNDALU Media on YouTube.</p>
+        </div>
+      </div>
+      <div>
+        <!-- 2025 -->
+        <div class="lecture-year-section active" id="year-2025">
+          <div class="lecture-year-heading">
+            <span data-en="4th Endowment Lecture" data-ta="4ஆம் நிறுவன சொற்பொழிவு">4th Endowment Lecture</span>
+            <span class="lecture-date-badge">19 April 2025</span>
+          </div>
+          <div class="lecture-card-item reveal" onclick="toggleDetail('d2025')">
+            <div class="lecture-num">04</div>
+            <div class="lecture-info">
+              <h3 class="lecture-title-text" data-en="75-Year Journey of the Constitution of India" data-ta="இந்திய அரசியலமைப்பின் 75 ஆண்டு பயணம்">75-Year Journey of the Constitution of India</h3>
+              <div class="lecture-meta">
+                <span class="lecture-speaker">Justice Jasti Chelameswar</span>
+                <span class="lecture-date">19 Apr 2025</span>
+              </div>
+              <p class="lecture-desc" data-en="Former Judge, Supreme Court of India. Commemoration of the 75th anniversary of the Indian Constitution — exploring the evolution of constitutional values and the judiciary's role in maintaining equity over seven decades." data-ta="இந்திய உச்ச நீதிமன்றத்தின் முன்னாள் நீதிபதி. இந்திய அரசியலமைப்பின் 75வது ஆண்டு விழா — ஏழு தசாப்தங்களில் அரசியலமைப்பு மதிப்புகளின் பரிணாமம்.">Former Judge, Supreme Court of India. Commemoration of the 75th anniversary of the Indian Constitution — exploring the evolution of constitutional values and the judiciary's role in maintaining equity over seven decades.</p>
+            </div>
+            <button class="lecture-expand-btn" data-en="Minutes" data-ta="நிமிடங்கள்">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              <span data-en="Minutes" data-ta="நிமிடங்கள்">Minutes</span>
+            </button>
+          </div>
+          <div class="lecture-detail-panel" id="d2025">
+            <p data-en="This landmark 4th edition marked the 75th anniversary of the Constitution of India. Justice Chelameswar traced the arc of constitutional values from the founding moment to the present day, examining how the judiciary has upheld — and at times strained — the promises of the republic. The discussion centred on federalism, judicial independence, and the enduring relevance of the Preamble's ideals of justice, liberty, equality, and fraternity. Held in collaboration with RMRL and attended by legal scholars from across Chennai." data-ta="இந்த முக்கியமான 4ஆம் பதிப்பு இந்திய அரசியலமைப்பின் 75வது ஆண்டு விழாவை கொண்டாடியது. நீதிபதி சேலமேஸ்வர் நிறுவன தருணத்திலிருந்து இன்றுவரை அரசியலமைப்பு மதிப்புகளின் வளர்ச்சியை சித்தரித்தார். விவாதம் கூட்டாட்சி, நீதித்துறை சுதந்திரம் மற்றும் முகப்புரையின் நீடித்த பொருத்தப்பாடு குறித்து மையப்பட்டது.">This landmark 4th edition marked the 75th anniversary of the Constitution of India. Justice Chelameswar traced the arc of constitutional values from the founding moment to the present day, examining how the judiciary has upheld — and at times strained — the promises of the republic. The discussion centred on federalism, judicial independence, and the enduring relevance of the Preamble's ideals of justice, liberty, equality, and fraternity. Held in collaboration with RMRL and attended by legal scholars from across Chennai.</p>
+            <div class="lecture-downloads">
+              <button class="download-btn" onclick="downloadTranscript('2025','Justice Jasti Chelameswar','75-Year Journey of the Constitution of India','19 April 2025')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-en="Download Transcript PDF" data-ta="ஆவண PDF பதிவிறக்கம்">Download Transcript PDF</span>
+              </button>
+              <button class="print-btn" onclick="printDetail('d2025','75-Year Journey of the Constitution of India')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span data-en="Print Minutes" data-ta="நிமிடங்களை அச்சிடு">Print Minutes</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2024 -->
+        <div class="lecture-year-section" id="year-2024">
+          <div class="lecture-year-heading">
+            <span data-en="3rd Endowment Lecture" data-ta="3ஆம் நிறுவன சொற்பொழிவு">3rd Endowment Lecture</span>
+            <span class="lecture-date-badge">28 April 2024</span>
+          </div>
+          <div class="lecture-card-item reveal" onclick="toggleDetail('d2024')">
+            <div class="lecture-num">03</div>
+            <div class="lecture-info">
+              <h3 class="lecture-title-text" data-en="Guilty Till Proved Innocent: Dark Areas of Criminal Jurisprudence" data-ta="நிரூபிக்கப்படும் வரை குற்றவாளி: குற்றவியல் நீதியின் இருண்ட பகுதிகள்">Guilty Till Proved Innocent: Dark Areas of Criminal Jurisprudence</h3>
+              <div class="lecture-meta">
+                <span class="lecture-speaker">Dr. S. Muralidhar</span>
+                <span class="lecture-date">28 Apr 2024</span>
+              </div>
+              <p class="lecture-desc" data-en="Former Chief Justice, Orissa High Court. An unflinching examination of structural flaws in criminal law where the presumption of innocence is compromised." data-ta="ஒரிசா உயர் நீதிமன்றத்தின் முன்னாள் தலைமை நீதிபதி. குற்றமற்றவர் என கருதப்படும் கொள்கை சமரசப்படுத்தப்படும் குற்றவியல் சட்டத்தின் கட்டமைப்பு குறைபாடுகளின் ஆய்வு.">Former Chief Justice, Orissa High Court. An unflinching examination of structural flaws in criminal law where the presumption of innocence is compromised.</p>
+              <p class="lecture-guests" data-en="Guests: Justice Anita Sumanth · Justice N. Anand Venkatesh (Madras HC)" data-ta="விருந்தினர்கள்: நீதிபதி அனிதா சுமந்த் · நீதிபதி என். ஆனந்த் வெங்கடேஷ்">Guests: Justice Anita Sumanth · Justice N. Anand Venkatesh (Madras HC)</p>
+            </div>
+            <button class="lecture-expand-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              <span data-en="Minutes" data-ta="நிமிடங்கள்">Minutes</span>
+            </button>
+          </div>
+          <div class="lecture-detail-panel" id="d2024">
+            <p data-en="Dr. Muralidhar delivered a forensic examination of the 'dark areas' of criminal law — spaces where the presumption of innocence is routinely eroded by systemic pressures. He identified bail denial, prolonged undertrial detention, and prosecutorial overreach as critical fault lines. The judge urged the public to be informed and stand up to injustice, and emphasised that judicial independence must be absolute even at the magistrate level to prevent wrongful prosecutions." data-ta="டாக்டர் முரளிதர் குற்றவியல் சட்டத்தின் 'இருண்ட பகுதிகள்' குறித்து ஆழமான ஆய்வு நடத்தினார் — அமைப்புமுறை அழுத்தங்களால் குற்றமற்றவர் என கருதப்படும் கொள்கை வழக்கமாக அரிக்கப்படும் இடங்கள்.">Dr. Muralidhar delivered a forensic examination of the "dark areas" of criminal law — spaces where the presumption of innocence is routinely eroded by systemic pressures. He identified bail denial, prolonged undertrial detention, and prosecutorial overreach as critical fault lines. The judge urged the public to be informed and stand up to injustice, and emphasised that judicial independence must be absolute even at the magistrate level to prevent wrongful prosecutions. The lecture was attended by sitting Madras High Court judges and drew significant engagement from the Chennai legal community.</p>
+            <div class="lecture-downloads">
+              <button class="download-btn" onclick="downloadTranscript('2024','Dr. S. Muralidhar','Guilty Till Proved Innocent','28 April 2024')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-en="Download Transcript PDF" data-ta="ஆவண PDF பதிவிறக்கம்">Download Transcript PDF</span>
+              </button>
+              <button class="print-btn" onclick="printDetail('d2024','Guilty Till Proved Innocent')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span data-en="Print Minutes" data-ta="நிமிடங்களை அச்சிடு">Print Minutes</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2023 -->
+        <div class="lecture-year-section" id="year-2023">
+          <div class="lecture-year-heading">
+            <span data-en="2nd Endowment Lecture" data-ta="2ஆம் நிறுவன சொற்பொழிவு">2nd Endowment Lecture</span>
+            <span class="lecture-date-badge">16 April 2023</span>
+          </div>
+          <div class="lecture-card-item reveal" onclick="toggleDetail('d2023')">
+            <div class="lecture-num">02</div>
+            <div class="lecture-info">
+              <h3 class="lecture-title-text" data-en="Pillars of Indian Democracy — Federalism Under Strain" data-ta="இந்திய ஜனநாயகத்தின் தூண்கள் — அழுத்தத்தில் கூட்டாட்சி">Pillars of Indian Democracy — Federalism Under Strain</h3>
+              <div class="lecture-meta">
+                <span class="lecture-speaker">Abhishek Manu Singhvi</span>
+                <span class="lecture-date">16 Apr 2023</span>
+              </div>
+              <p class="lecture-desc" data-en="Senior Advocate & Member of Parliament. A comprehensive analysis of Indian federalism across constitutional, economic, and political fronts." data-ta="மூத்த வழக்கறிஞர் மற்றும் நாடாளுமன்ற உறுப்பினர். அரசியலமைப்பு, பொருளாதார மற்றும் அரசியல் முனைகளில் இந்திய கூட்டாட்சியின் விரிவான பகுப்பாய்வு.">Senior Advocate & Member of Parliament. A comprehensive analysis of Indian federalism across constitutional, economic, and political fronts.</p>
+            </div>
+            <button class="lecture-expand-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              <span data-en="Minutes" data-ta="நிமிடங்கள்">Minutes</span>
+            </button>
+          </div>
+          <div class="lecture-detail-panel" id="d2023">
+            <p data-en="Singhvi delivered a wide-ranging lecture on the triple strain on Indian federalism — constitutional, economic, and political. He notably coined the phrase that the Centre had transformed 'cooperative federalism' into 'combative federalism,' resulting in unsavoury confrontations between the Union and state governments. The lecture examined Article 356 misuse, financial devolution failures, and the erosion of state legislative autonomy. Singhvi concluded with a call for a renewed constitutional compact between the Centre and the states, grounded in the federal spirit of the Constitution's framers." data-ta="சிங்வி இந்திய கூட்டாட்சியின் மூவிரட்டை அழுத்தம் குறித்து விரிவான சொற்பொழிவு நிகழ்த்தினார். மத்திய அரசு 'கூட்டு கூட்டாட்சியை' 'போர்க்குண கூட்டாட்சியாக' மாற்றியுள்ளது என்ற சொற்றொடரை அவர் குறிப்பாக உருவாக்கினார்.">Singhvi delivered a wide-ranging lecture on the triple strain on Indian federalism — constitutional, economic, and political. He notably coined the phrase that the Centre had transformed "cooperative federalism" into "combative federalism," resulting in unsavoury confrontations between the Union and state governments. The lecture examined Article 356 misuse, financial devolution failures, and the erosion of state legislative autonomy. Singhvi concluded with a call for a renewed constitutional compact between the Centre and the states, grounded in the federal spirit of the Constitution's framers.</p>
+            <div class="lecture-downloads">
+              <button class="download-btn" onclick="downloadTranscript('2023','Abhishek Manu Singhvi','Pillars of Indian Democracy — Federalism Under Strain','16 April 2023')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-en="Download Transcript PDF" data-ta="ஆவண PDF பதிவிறக்கம்">Download Transcript PDF</span>
+              </button>
+              <button class="print-btn" onclick="printDetail('d2023','Pillars of Indian Democracy')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span data-en="Print Minutes" data-ta="நிமிடங்களை அச்சிடு">Print Minutes</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2022 -->
+        <div class="lecture-year-section" id="year-2022">
+          <div class="lecture-year-heading">
+            <span data-en="1st Endowment Lecture" data-ta="1ஆம் நிறுவன சொற்பொழிவு">1st Endowment Lecture</span>
+            <span class="lecture-date-badge">16 April 2022</span>
+          </div>
+          <div class="lecture-card-item reveal" onclick="toggleDetail('d2022')">
+            <div class="lecture-num">01</div>
+            <div class="lecture-info">
+              <h3 class="lecture-title-text" data-en="Justice and Equity — The Constitutional Role of the Governor" data-ta="நீதி மற்றும் சமத்துவம் — ஆளுநரின் அரசியலமைப்பு பங்கு">Justice and Equity — The Constitutional Role of the Governor</h3>
+              <div class="lecture-meta">
+                <span class="lecture-speaker">Kapil Sibal</span>
+                <span class="lecture-date">16 Apr 2022</span>
+              </div>
+              <p class="lecture-desc" data-en="Senior Advocate & Member of Parliament. The inaugural lecture examined the Governor's office as a colonial legacy and argued for strict constitutional limits on its powers." data-ta="மூத்த வழக்கறிஞர் மற்றும் நாடாளுமன்ற உறுப்பினர். ஆளுநர் பதவியை காலனித்துவ மரபாக பரிசோதித்து அதன் அதிகாரங்களில் கடுமையான அரசியலமைப்பு வரம்புகளை வாதிட்டனர்.">Senior Advocate & Member of Parliament. The inaugural lecture examined the Governor's office as a colonial legacy and argued for strict constitutional limits on its powers.</p>
+              <p class="lecture-guests" data-en="Guests: CM M.K. Stalin · N. Ram (The Hindu Group) · Udhayanidhi Stalin" data-ta="விருந்தினர்கள்: முதலமைச்சர் மு.க. ஸ்டாலின் · என். ராம் · உதயநிதி ஸ்டாலின்">Guests: CM M.K. Stalin · N. Ram (The Hindu Group) · Udhayanidhi Stalin</p>
+            </div>
+            <button class="lecture-expand-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              <span data-en="Minutes" data-ta="நிமிடங்கள்">Minutes</span>
+            </button>
+          </div>
+          <div class="lecture-detail-panel" id="d2022">
+            <p data-en="The inaugural lecture of the foundation was a landmark occasion, attended by Chief Minister M.K. Stalin, N. Ram of The Hindu Group, and Udhayanidhi Stalin. Kapil Sibal argued that the office of Governor is a vestigial colonial institution with strictly limited constitutional mandate. He contended that a Governor should refer Bills to the President only when they conflict with existing parliamentary legislation — not as a political instrument to stall elected state governments. Sibal's lecture sparked significant national debate on gubernatorial overreach, coming at a time of escalating Centre-state tensions." data-ta="அறக்கட்டளையின் முதல் சொற்பொழிவு ஒரு குறிப்பிடத்தக்க நிகழ்வாக இருந்தது, முதலமைச்சர் மு.க. ஸ்டாலின், தி இந்து குழுவின் என். ராம் மற்றும் உதயநிதி ஸ்டாலின் ஆகியோர் கலந்துகொண்டனர். கபில் சிபல் ஆளுநர் பதவி ஒரு வம்சவழி காலனித்துவ நிறுவனம் என வாதிட்டார்.">The inaugural lecture of the foundation was a landmark occasion, attended by Chief Minister M.K. Stalin, N. Ram of The Hindu Group, and Udhayanidhi Stalin. Kapil Sibal argued that the office of Governor is a vestigial colonial institution with strictly limited constitutional mandate. He contended that a Governor should refer Bills to the President only when they conflict with existing parliamentary legislation — not as a political instrument to stall elected state governments. Sibal's lecture sparked significant national debate on gubernatorial overreach, coming at a time of escalating Centre-state tensions.</p>
+            <div class="lecture-downloads">
+              <button class="download-btn" onclick="downloadTranscript('2022','Kapil Sibal','Justice and Equity — The Constitutional Role of the Governor','16 April 2022')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-en="Download Transcript PDF" data-ta="ஆவண PDF பதிவிறக்கம்">Download Transcript PDF</span>
+              </button>
+              <button class="print-btn" onclick="printDetail('d2022','Justice and Equity — The Constitutional Role of the Governor')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span data-en="Print Minutes" data-ta="நிமிடங்களை அச்சிடு">Print Minutes</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING -->
+<section id="upcoming">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Next Event" data-ta="அடுத்த நிகழ்வு">Next Event</p>
+      <h2 class="section-title">
+        <span data-en="Upcoming" data-ta="வருங்கால">Upcoming</span>
+        <em data-en=" Programme" data-ta=" நிகழ்ச்சி"> Programme</em>
+      </h2>
+    </div>
+    <div class="upcoming-feature reveal">
+      <div class="upcoming-info">
+        <span class="upcoming-tag" data-en="Registrations Open" data-ta="பதிவுகள் திறந்துள்ளன">Registrations Open</span>
+        <h2 class="upcoming-title" data-en="5th Rakesh Endowment Lecture — April 2026" data-ta="5ஆம் ரகேஷ் நிறுவன சொற்பொழிவு — ஏப்ரல் 2026">5th Rakesh Endowment Lecture — April 2026</h2>
+        <div class="upcoming-speaker-info">
+          <div class="speaker-avatar">TBA</div>
+          <div>
+            <p class="speaker-name" data-en="Speaker to be Announced" data-ta="பேச்சாளர் அறிவிக்கப்படுவார்">Speaker to be Announced</p>
+            <p class="speaker-role" data-en="Senior Legal Scholar · Constitutional Law Expert" data-ta="மூத்த சட்ட அறிஞர் · அரசியலமைப்பு சட்ட நிபுணர்">Senior Legal Scholar · Constitutional Law Expert</p>
+          </div>
+        </div>
+        <div class="upcoming-details">
+          <div>
+            <p class="detail-label" data-en="Expected Date" data-ta="எதிர்பார்க்கப்படும் தேதி">Expected Date</p>
+            <p class="detail-value" data-en="April 2026 (Announced Soon)" data-ta="ஏப்ரல் 2026 (விரைவில் அறிவிப்பு)">April 2026 (Announced Soon)</p>
+          </div>
+          <div>
+            <p class="detail-label" data-en="Venue" data-ta="இடம்">Venue</p>
+            <p class="detail-value" data-en="Roja Muthiah Research Library, Chennai" data-ta="ரோஜா முத்தையா ஆராய்ச்சி நூலகம், சென்னை">Roja Muthiah Research Library, Chennai</p>
+          </div>
+          <div>
+            <p class="detail-label" data-en="Organised by" data-ta="ஏற்பாடு செய்தவர்கள்">Organised by</p>
+            <p class="detail-value" data-en="Rakesh Law Foundation × RMRL" data-ta="ரகேஷ் சட்ட அறக்கட்டளை × RMRL">Rakesh Law Foundation × RMRL</p>
+          </div>
+          <div>
+            <p class="detail-label" data-en="Mode" data-ta="முறை">Mode</p>
+            <p class="detail-value" data-en="In-person · Open to All" data-ta="நேரில் · அனைவருக்கும் திறந்தது">In-person · Open to All</p>
+          </div>
+        </div>
+        <div class="upcoming-actions">
+          <a href="#contact" class="btn-gold" data-en="Register Interest" data-ta="ஆர்வம் பதிவு செய்யுங்கள்">Register Interest</a>
+          <a href="#contact" class="btn-ghost" data-en="Get Notified" data-ta="அறிவிப்பு பெறுங்கள்">Get Notified</a>
+        </div>
+      </div>
+      <div class="upcoming-visual">
+        <div class="countdown-box">
+          <p class="countdown-label" data-en="Estimated Time to 5th Lecture" data-ta="5ஆம் சொற்பொழிவுக்கு மீதமுள்ள நேரம்">Estimated Time to 5th Lecture</p>
+          <div class="countdown-display">
+            <div class="countdown-unit"><span class="countdown-num" id="days">--</span><span class="countdown-unit-label" data-en="Days" data-ta="நாட்கள்">Days</span></div>
+            <div class="countdown-unit"><span class="countdown-num" id="hours">--</span><span class="countdown-unit-label" data-en="Hours" data-ta="மணி">Hours</span></div>
+            <div class="countdown-unit"><span class="countdown-num" id="minutes">--</span><span class="countdown-unit-label" data-en="Minutes" data-ta="நிமிடங்கள்">Minutes</span></div>
+            <div class="countdown-unit"><span class="countdown-num" id="seconds">--</span><span class="countdown-unit-label" data-en="Seconds" data-ta="விநாடிகள்">Seconds</span></div>
+          </div>
+        </div>
+        <div>
+          <p class="agenda-title" data-en="Typical Programme Schedule" data-ta="வழக்கமான நிகழ்ச்சி அட்டவணை">Typical Programme Schedule</p>
+          <div class="agenda-item"><span class="agenda-time">10:00 AM</span><span class="agenda-item-text" data-en="Registration & Welcome Tea" data-ta="பதிவு மற்றும் வரவேற்பு தேநீர்">Registration & Welcome Tea</span></div>
+          <div class="agenda-item"><span class="agenda-time">10:30 AM</span><span class="agenda-item-text" data-en="Welcome Address by the Foundation" data-ta="அறக்கட்டளையின் வரவேற்பு உரை">Welcome Address by the Foundation</span></div>
+          <div class="agenda-item"><span class="agenda-time">10:45 AM</span><span class="agenda-item-text" data-en="Keynote Endowment Lecture" data-ta="முக்கிய நிறுவன சொற்பொழிவு">Keynote Endowment Lecture</span></div>
+          <div class="agenda-item"><span class="agenda-time">12:00 PM</span><span class="agenda-item-text" data-en="Open Q&A with Audience" data-ta="பார்வையாளர்களுடன் கேள்வி-பதில்">Open Q&A with Audience</span></div>
+          <div class="agenda-item"><span class="agenda-time">12:45 PM</span><span class="agenda-item-text" data-en="Vote of Thanks & Networking" data-ta="நன்றி வாக்கு மற்றும் நெட்வொர்க்கிங்">Vote of Thanks & Networking</span></div>
+          <div class="agenda-item"><span class="agenda-time">1:00 PM</span><span class="agenda-item-text" data-en="Formal Conclusion" data-ta="முறையான நிறைவு">Formal Conclusion</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Flagship Initiatives" data-ta="முன்னணி முயற்சிகள்">Flagship Initiatives</p>
+      <h2 class="section-title">
+        <span data-en="SOEL & Tamil" data-ta="SOEL & தமிழ்">SOEL & Tamil</span>
+        <em data-en=" Moot Court" data-ta=" மூட் கோர்ட்"> Moot Court</em>
+      </h2>
+      <p class="section-sub" data-en="Beyond lectures — our partner-driven events that put law students into the arena of advocacy and argument." data-ta="சொற்பொழிவுகளுக்கு அப்பால் — சட்ட மாணவர்களை வாதிடும் அரங்கில் வைக்கும் எங்கள் கூட்டாளி நிகழ்வுகள்.">Beyond lectures — our partner-driven events that put law students into the arena of advocacy and argument.</p>
+    </div>
+    <div class="events-grid">
+      <div class="event-feature-card reveal">
+        <div class="event-card-top">
+          <div class="event-card-monogram">SOEL</div>
+          <div class="event-card-overlay"></div>
+          <p class="event-card-label" data-en="SOEL × Rakesh Law Foundation" data-ta="SOEL × ரகேஷ் சட்ட அறக்கட்டளை">SOEL × Rakesh Law Foundation</p>
+          <h3 class="event-card-name" data-en="School of Excellence<br>in Law Partnership" data-ta="சட்டத்தில் சிறப்பு<br>பள்ளி கூட்டு">School of Excellence<br>in Law Partnership</h3>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-desc" data-en="The foundation partners with the School of Excellence in Law (SOEL) to bring clinical legal education to students. This includes workshops, lecture participations, and advocacy training aligned with the foundation's constitutional values." data-ta="அறக்கட்டளை மருத்துவ சட்டக் கல்வியை மாணவர்களுக்கு கொண்டுவர SOEL-உடன் இணைகிறது. இதில் பட்டறைகள், சொற்பொழிவு பங்கேற்புகள் மற்றும் வாதிடும் பயிற்சி அடங்கும்.">The foundation partners with the School of Excellence in Law (SOEL) to bring clinical legal education to students. This includes workshops, lecture participations, and advocacy training aligned with the foundation's constitutional values.</p>
+          <div class="event-tags">
+            <span class="event-tag" data-en="Ongoing" data-ta="தொடர்ந்து">Ongoing</span>
+            <span class="event-tag" data-en="Law Students" data-ta="சட்ட மாணவர்கள்">Law Students</span>
+            <span class="event-tag" data-en="Advocacy Training" data-ta="வாதிடும் பயிற்சி">Advocacy Training</span>
+            <span class="event-tag" data-en="Certificate" data-ta="சான்றிதழ்">Certificate</span>
+          </div>
+          <div class="event-venue">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="School of Excellence in Law, Chennai" data-ta="சட்டத்தில் சிறப்பு பள்ளி, சென்னை">School of Excellence in Law, Chennai</span>
+          </div>
+        </div>
+      </div>
+      <div class="event-feature-card reveal reveal-delay-2">
+        <div class="event-card-top">
+          <div class="event-card-monogram" lang="ta">மூட்</div>
+          <div class="event-card-overlay"></div>
+          <p class="event-card-label" data-en="Criminal Trial Advocacy" data-ta="குற்றவியல் விசாரணை வாதம்">Criminal Trial Advocacy</p>
+          <h3 class="event-card-name" data-en="Tamil Moot Court<br>Criminal Trial" data-ta="தமிழ் மூட் கோர்ட்<br>குற்றவியல் விசாரணை">Tamil Moot Court<br>Criminal Trial</h3>
+        </div>
+        <div class="event-card-body">
+          <p class="event-card-desc" data-en="A pioneering competition conducting full criminal trial moot court proceedings — helping students experience real courtroom dynamics. The most recent edition was held in February 2026, with a valedictory ceremony broadcast live by TNDALU Media." data-ta="முழு குற்றவியல் விசாரணை மூட் கோர்ட் நடவடிக்கைகளை நடத்தும் முன்னோடி போட்டி. சமீபத்திய பதிப்பு பிப்ரவரி 2026ல் நடைபெற்றது.">A pioneering competition conducting full criminal trial moot court proceedings — helping students experience real courtroom dynamics. The most recent edition was held in February 2026, with a valedictory ceremony broadcast live by TNDALU Media.</p>
+          <div class="event-tags">
+            <span class="event-tag" data-en="Competitive" data-ta="போட்டி">Competitive</span>
+            <span class="event-tag" data-en="Criminal Law" data-ta="குற்றவியல் சட்டம்">Criminal Law</span>
+            <span class="event-tag" data-en="TNDALU" data-ta="TNDALU">TNDALU</span>
+            <span class="event-tag" data-en="Tamil Language" data-ta="தமிழ் மொழி">Tamil Language</span>
+          </div>
+          <div class="event-venue">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Chennai Venues · Most recent: Feb 2026" data-ta="சென்னை இடங்கள் · சமீபத்தியது: பிப் 2026">Chennai Venues · Most recent: Feb 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Media & Resources" data-ta="ஊடகம் மற்றும் வளங்கள்">Media & Resources</p>
+      <h2 class="section-title">
+        <span data-en="Knowledge" data-ta="அறிவு">Knowledge</span>
+        <em data-en=" Repository" data-ta=" களஞ்சியம்"> Repository</em>
+      </h2>
+      <p class="section-sub" data-en="Events documented and made accessible — because constitutional knowledge must never be locked away." data-ta="நிகழ்வுகள் ஆவணப்படுத்தப்பட்டு அணுகக்கூடியதாக ஆக்கப்படுகின்றன — அரசியலமைப்பு அறிவு என்றும் பூட்டி வைக்கப்படக்கூடாது.">Events documented and made accessible — because constitutional knowledge must never be locked away.</p>
+    </div>
+    <div class="resources-grid">
+      <div class="resource-card reveal">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <p class="resource-type" data-en="Video Archive" data-ta="வீடியோ காப்பகம்">Video Archive</p>
+        <h3 class="resource-title" data-en="Event Recordings" data-ta="நிகழ்வு பதிவுகள்">Event Recordings</h3>
+        <p class="resource-desc" data-en="Recordings of foundation events are available via Red Pix 24x7 and TNDALU Media on YouTube — freely accessible to all." data-ta="அறக்கட்டளை நிகழ்வுகளின் பதிவுகள் YouTube-ல் Red Pix 24x7 மற்றும் TNDALU Media மூலம் கிடைக்கின்றன.">Recordings of foundation events are available via Red Pix 24x7 and TNDALU Media on YouTube — freely accessible to all.</p>
+        <a href="https://www.youtube.com" class="resource-link" target="_blank" data-en="Watch on YouTube" data-ta="YouTube-ல் பார்க்கவும்">Watch on YouTube</a>
+      </div>
+      <div class="resource-card reveal reveal-delay-1">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <p class="resource-type" data-en="Legal Filings" data-ta="சட்ட ஆவணங்கள்">Legal Filings</p>
+        <h3 class="resource-title" data-en="Transparency & Compliance" data-ta="வெளிப்படைத்தன்மை மற்றும் இணங்கல்">Transparency & Compliance</h3>
+        <p class="resource-desc" data-en="The foundation is registered under Section 12AB of the Income Tax Act and maintains full compliance as a charitable trust in Chennai." data-ta="அறக்கட்டளை வருமான வரிச் சட்டத்தின் 12AB பிரிவின் கீழ் பதிவு செய்யப்பட்டு சென்னையில் அறக்கட்டளையாக முழுமையான இணக்கத்தை பராமரிக்கிறது.">The foundation is registered under Section 12AB of the Income Tax Act and maintains full compliance as a charitable trust in Chennai.</p>
+        <a href="#contact" class="resource-link" data-en="Request Documents" data-ta="ஆவணங்கள் கோரவும்">Request Documents</a>
+      </div>
+      <div class="resource-card reveal reveal-delay-2">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <p class="resource-type" data-en="Lecture Highlights" data-ta="சொற்பொழிவு சிறப்பம்சங்கள்">Lecture Highlights</p>
+        <h3 class="resource-title" data-en="Speaker Insights Archive" data-ta="பேச்சாளர் கருத்துகள் காப்பகம்">Speaker Insights Archive</h3>
+        <p class="resource-desc" data-en="Key arguments and highlights from each endowment lecture — summarised for students, researchers, and legal professionals." data-ta="ஒவ்வொரு நிறுவன சொற்பொழிவிலும் இருந்து முக்கிய வாதங்கள் மற்றும் சிறப்பம்சங்கள் — மாணவர்கள், ஆராய்ச்சியாளர்கள் மற்றும் சட்ட வல்லுநர்களுக்காக சுருக்கப்பட்டது.">Key arguments and highlights from each endowment lecture — summarised for students, researchers, and legal professionals.</p>
+        <a href="#lectures" class="resource-link" data-en="View Lecture Minutes" data-ta="சொற்பொழிவு நிமிடங்களை காண்க">View Lecture Minutes</a>
+      </div>
+      <div class="resource-card reveal reveal-delay-3">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <p class="resource-type" data-en="Moot Court" data-ta="மூட் கோர்ட்">Moot Court</p>
+        <h3 class="resource-title" data-en="Moot Court Resources" data-ta="மூட் கோர்ட் வளங்கள்">Moot Court Resources</h3>
+        <p class="resource-desc" data-en="Past Tamil Moot Court Criminal Trial problems, guidelines, and advocacy frameworks for participating law student teams." data-ta="கடந்தகால தமிழ் மூட் கோர்ட் குற்றவியல் விசாரணை சிக்கல்கள், வழிகாட்டுதல்கள் மற்றும் பங்கேற்கும் சட்ட மாணவர் குழுக்களுக்கான கட்டமைப்புகள்.">Past Tamil Moot Court Criminal Trial problems, guidelines, and advocacy frameworks for participating law student teams.</p>
+        <a href="#contact" class="resource-link" data-en="Request Materials" data-ta="பொருட்கள் கோரவும்">Request Materials</a>
+      </div>
+      <div class="resource-card reveal reveal-delay-4">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v10a2 2 0 0 1-2 2z"/><path d="M17 22v-7H7v7"/><path d="M7 2v5h8"/></svg>
+        </div>
+        <p class="resource-type" data-en="Press Coverage" data-ta="பத்திரிகை செய்திகள்">Press Coverage</p>
+        <h3 class="resource-title" data-en="Media & Press Archive" data-ta="ஊடக மற்றும் பத்திரிகை காப்பகம்">Media & Press Archive</h3>
+        <p class="resource-desc" data-en="Coverage by The Hindu, Red Pix 24x7, Facebook, and other media — chronicling the foundation's journey since 2022." data-ta="தி இந்து, Red Pix 24x7, Facebook மற்றும் பிற ஊடகங்களின் தகவல்கள் — 2022 முதல் அறக்கட்டளையின் பயணத்தை பதிவு செய்கின்றன.">Coverage by The Hindu, Red Pix 24x7, Facebook, and other media — chronicling the foundation's journey since 2022.</p>
+        <a href="#contact" class="resource-link" data-en="View Press Kit" data-ta="பத்திரிகை கிட் காண்க">View Press Kit</a>
+      </div>
+      <div class="resource-card reveal reveal-delay-4">
+        <div class="resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        </div>
+        <p class="resource-type" data-en="Photo Gallery" data-ta="புகைப்பட தொகுப்பு">Photo Gallery</p>
+        <h3 class="resource-title" data-en="Events Gallery" data-ta="நிகழ்வுகள் தொகுப்பு">Events Gallery</h3>
+        <p class="resource-desc" data-en="Photographs from endowment lectures, moot court ceremonies, and special events — documenting the foundation's growing community." data-ta="நிறுவன சொற்பொழிவுகள், மூட் கோர்ட் விழாக்கள் மற்றும் சிறப்பு நிகழ்வுகளிலிருந்து புகைப்படங்கள் — அறக்கட்டளையின் வளரும் சமூகத்தை ஆவணப்படுத்துகின்றன.">Photographs from endowment lectures, moot court ceremonies, and special events — documenting the foundation's growing community.</p>
+        <a href="#contact" class="resource-link" data-en="View Gallery" data-ta="தொகுப்பை காண்க">View Gallery</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS & UPDATES -->
+<section id="news">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Latest from the Foundation" data-ta="அறக்கட்டளையிலிருந்து சமீபத்தியவை">Latest from the Foundation</p>
+      <h2 class="section-title">
+        <span data-en="News &amp;" data-ta="செய்திகள் &amp;">News &amp;</span>
+        <em data-en=" Updates" data-ta=" புதுப்பிப்புகள்"> Updates</em>
+      </h2>
+      <p class="section-sub" data-en="Announcements, press mentions, and updates from the Rakesh Law Foundation — stay informed." data-ta="ரகேஷ் சட்ட அறக்கட்டளையின் அறிவிப்புகள், பத்திரிகை குறிப்புகள் மற்றும் புதுப்பிப்புகள்.">Announcements, press mentions, and updates from the Rakesh Law Foundation — stay informed.</p>
+    </div>
+    <div class="news-grid">
+      <article class="news-card news-card-featured reveal">
+        <div class="news-card-meta">
+          <span class="news-tag news-tag-announce" data-en="Announcement" data-ta="அறிவிப்பு">Announcement</span>
+          <span class="news-date">15 Mar 2026</span>
+        </div>
+        <h3 class="news-title" data-en="5th Rakesh Endowment Lecture Announced for April 2026" data-ta="5ஆம் ரகேஷ் நிறுவன சொற்பொழிவு ஏப்ரல் 2026க்கு அறிவிக்கப்பட்டது">5th Rakesh Endowment Lecture Announced for April 2026</h3>
+        <p class="news-excerpt" data-en="The Rakesh Law Foundation is proud to announce its 5th annual endowment lecture, continuing the tradition of bringing leading constitutional voices to Chennai. Speaker announcement expected by end of March 2026." data-ta="ரகேஷ் சட்ட அறக்கட்டளை தனது 5வது வார்ஷிக நிறுவன சொற்பொழிவை அறிவிப்பதில் பெருமிதம் கொள்கிறது. மார்ச் 2026 இறுதிக்குள் பேச்சாளர் அறிவிப்பு எதிர்பார்க்கப்படுகிறது.">The Rakesh Law Foundation is proud to announce its 5th annual endowment lecture, continuing the tradition of bringing leading constitutional voices to Chennai. Speaker announcement expected by end of March 2026.</p>
+        <a href="#upcoming" class="news-link" data-en="Read More" data-ta="மேலும் படிக்க">Read More
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </article>
+      <article class="news-card reveal reveal-delay-1">
+        <div class="news-card-meta">
+          <span class="news-tag news-tag-event" data-en="Event" data-ta="நிகழ்வு">Event</span>
+          <span class="news-date">22 Feb 2026</span>
+        </div>
+        <h3 class="news-title" data-en="Tamil Moot Court Criminal Trial 2026 Concludes Successfully" data-ta="தமிழ் மூட் கோர்ட் குற்றவியல் விசாரணை 2026 வெற்றிகரமாக நிறைவு">Tamil Moot Court Criminal Trial 2026 Concludes Successfully</h3>
+        <p class="news-excerpt" data-en="The valedictory ceremony of the Tamil Moot Court Criminal Trial was broadcast live by TNDALU Media. Participating teams from across Tamil Nadu showcased exceptional advocacy skills." data-ta="தமிழ் மூட் கோர்ட் குற்றவியல் விசாரணையின் விடைப்பு விழா TNDALU Media-ல் நேரடியாக ஒளிபரப்பப்பட்டது.">The valedictory ceremony of the Tamil Moot Court Criminal Trial was broadcast live by TNDALU Media. Participating teams from across Tamil Nadu showcased exceptional advocacy skills.</p>
+        <a href="#events" class="news-link" data-en="Read More" data-ta="மேலும் படிக்க">Read More
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </article>
+      <article class="news-card reveal reveal-delay-2">
+        <div class="news-card-meta">
+          <span class="news-tag news-tag-media" data-en="Media" data-ta="ஊடகம்">Media</span>
+          <span class="news-date">20 Apr 2025</span>
+        </div>
+        <h3 class="news-title" data-en="4th Lecture Covered by The Hindu &amp; Red Pix 24x7" data-ta="4ஆம் சொற்பொழிவு தி இந்து மற்றும் Red Pix 24x7 மூலம் செய்தியாக்கப்பட்டது">4th Lecture Covered by The Hindu &amp; Red Pix 24x7</h3>
+        <p class="news-excerpt" data-en="Justice Chelameswar's address on the 75-year constitutional journey received extensive coverage from leading Tamil and English media outlets, amplifying the foundation's constitutional discourse." data-ta="நீதிபதி சேலமேஸ்வரின் 75 ஆண்டு அரசியலமைப்பு பயணம் குறித்த உரை முக்கிய தமிழ் மற்றும் ஆங்கில ஊடகங்களில் பரவலான செய்தியாக வெளியானது.">Justice Chelameswar's address on the 75-year constitutional journey received extensive coverage from leading Tamil and English media outlets, amplifying the foundation's constitutional discourse.</p>
+        <a href="#press" class="news-link" data-en="Read More" data-ta="மேலும் படிக்க">Read More
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </article>
+      <article class="news-card reveal reveal-delay-3">
+        <div class="news-card-meta">
+          <span class="news-tag news-tag-announce" data-en="Announcement" data-ta="அறிவிப்பு">Announcement</span>
+          <span class="news-date">01 Jan 2025</span>
+        </div>
+        <h3 class="news-title" data-en="Foundation Registers 500+ Alumni Across Tamil Nadu Law Schools" data-ta="அறக்கட்டளை தமிழ்நாடு சட்டப் பள்ளிகளில் 500+ பழைய மாணவர்களை பதிவு செய்கிறது">Foundation Registers 500+ Alumni Across Tamil Nadu Law Schools</h3>
+        <p class="news-excerpt" data-en="The foundation's outreach has grown substantially, with over 500 law students and legal professionals now part of its network — spanning SOEL, TNDALU, and partner institutions." data-ta="500க்கும் மேற்பட்ட சட்ட மாணவர்கள் மற்றும் சட்ட வல்லுநர்கள் இப்போது அறக்கட்டளையின் நெட்வொர்க்கின் ஒரு பகுதியாக உள்ளனர்.">The foundation's outreach has grown substantially, with over 500 law students and legal professionals now part of its network — spanning SOEL, TNDALU, and partner institutions.</p>
+        <a href="#contact" class="news-link" data-en="Read More" data-ta="மேலும் படிக்க">Read More
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS CLIPPINGS -->
+<section id="press">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="In the Media" data-ta="ஊடகங்களில்">In the Media</p>
+      <h2 class="section-title">
+        <span data-en="Press" data-ta="பத்திரிகை">Press</span>
+        <em data-en=" Clippings" data-ta=" செய்தி கட்டுரைகள்"> Clippings</em>
+      </h2>
+      <p class="section-sub" data-en="Selected coverage of the Rakesh Law Foundation from print and digital media since 2022." data-ta="2022 முதல் அச்சு மற்றும் டிஜிட்டல் ஊடகங்களில் ரகேஷ் சட்ட அறக்கட்டளையின் தேர்ந்தெடுக்கப்பட்ட செய்திகள்.">Selected coverage of the Rakesh Law Foundation from print and digital media since 2022.</p>
+    </div>
+    <div class="press-grid">
+      <div class="press-card reveal">
+        <div class="press-source-bar">
+          <span class="press-source-name">The Hindu</span>
+          <span class="press-source-date">20 Apr 2025</span>
+        </div>
+        <blockquote class="press-quote" data-en="&ldquo;Justice Chelameswar traced the evolution of constitutional values over seven decades in a lecture that drew Tamil Nadu's finest legal minds to RMRL.&rdquo;" data-ta="&ldquo;நீதிபதி சேலமேஸ்வர் RMRL-ல் தமிழ்நாட்டின் சிறந்த சட்ட அறிஞர்களை ஈர்த்த சொற்பொழிவில் ஏழு தசாப்தங்களில் அரசியலமைப்பு மதிப்புகளின் பரிணாமத்தை சித்தரித்தார்.&rdquo;">"Justice Chelameswar traced the evolution of constitutional values over seven decades in a lecture that drew Tamil Nadu's finest legal minds to RMRL."</blockquote>
+        <div class="press-card-footer">
+          <span class="press-section" data-en="Law &amp; Justice" data-ta="சட்டம் மற்றும் நீதி">Law &amp; Justice</span>
+          <a href="#" class="press-read-link" data-en="View Article" data-ta="கட்டுரையை காண்க">View Article
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="press-card reveal reveal-delay-1">
+        <div class="press-source-bar">
+          <span class="press-source-name">Red Pix 24x7</span>
+          <span class="press-source-date">29 Apr 2024</span>
+        </div>
+        <blockquote class="press-quote" data-en="&ldquo;Dr. Muralidhar's unflinching critique of India's criminal justice system resonated deeply with the audience of sitting judges and young advocates at the 3rd Rakesh Endowment Lecture.&rdquo;" data-ta="&ldquo;3ஆம் ரகேஷ் நிறுவன சொற்பொழிவில் டாக்டர் முரளிதரின் இந்திய குற்றவியல் நீதி அமைப்பின் நிர்பந்தமான விமர்சனம் நீதிபதிகள் மற்றும் இளம் வழக்கறிஞர்களிடம் ஆழமாக எதிரொலித்தது.&rdquo;">"Dr. Muralidhar's unflinching critique of India's criminal justice system resonated deeply with the audience of sitting judges and young advocates at the 3rd Rakesh Endowment Lecture."</blockquote>
+        <div class="press-card-footer">
+          <span class="press-section" data-en="Live Broadcast" data-ta="நேரடி ஒளிபரப்பு">Live Broadcast</span>
+          <a href="https://www.youtube.com" target="_blank" class="press-read-link" data-en="Watch Coverage" data-ta="செய்தியை பார்க்கவும்">Watch Coverage
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="press-card reveal reveal-delay-2">
+        <div class="press-source-bar">
+          <span class="press-source-name">TNDALU Media</span>
+          <span class="press-source-date">17 Apr 2023</span>
+        </div>
+        <blockquote class="press-quote" data-en="&ldquo;Singhvi's coining of 'combative federalism' at the 2nd Rakesh Endowment Lecture ignited a national conversation on Centre-state relations that echoes to this day.&rdquo;" data-ta="&ldquo;2ஆம் ரகேஷ் நிறுவன சொற்பொழிவில் சிங்வியின் 'போர்க்குண கூட்டாட்சி' என்ற கோஷம் மத்திய-மாநில உறவுகள் குறித்த தேசிய உரையாடலை தூண்டியது.&rdquo;">"Singhvi's coining of 'combative federalism' at the 2nd Rakesh Endowment Lecture ignited a national conversation on Centre-state relations that echoes to this day."</blockquote>
+        <div class="press-card-footer">
+          <span class="press-section" data-en="Constitutional Law" data-ta="அரசியலமைப்பு சட்டம்">Constitutional Law</span>
+          <a href="https://www.youtube.com" target="_blank" class="press-read-link" data-en="Watch Coverage" data-ta="செய்தியை பார்க்கவும்">Watch Coverage
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="press-card reveal reveal-delay-3">
+        <div class="press-source-bar">
+          <span class="press-source-name">The Hindu</span>
+          <span class="press-source-date">17 Apr 2022</span>
+        </div>
+        <blockquote class="press-quote" data-en="&ldquo;Kapil Sibal's inaugural lecture at the Rakesh Law Foundation, graced by Chief Minister M.K. Stalin, set the tone for what promises to be an enduring institution in Chennai's legal landscape.&rdquo;" data-ta="&ldquo;முதலமைச்சர் மு.க. ஸ்டாலினால் அலங்கரிக்கப்பட்ட ரகேஷ் சட்ட அறக்கட்டளையில் கபில் சிபலின் முதல் சொற்பொழிவு சென்னையின் சட்ட நிலப்பரப்பில் நீடிக்கும் நிறுவனத்திற்கான தொனியை அமைத்தது.&rdquo;">"Kapil Sibal's inaugural lecture at the Rakesh Law Foundation, graced by Chief Minister M.K. Stalin, set the tone for what promises to be an enduring institution in Chennai's legal landscape."</blockquote>
+        <div class="press-card-footer">
+          <span class="press-section" data-en="Front Page" data-ta="முன் பக்கம்">Front Page</span>
+          <a href="#" class="press-read-link" data-en="View Article" data-ta="கட்டுரையை காண்க">View Article
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL FEED -->
+<section id="social">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Stay Connected" data-ta="இணைந்திருங்கள்">Stay Connected</p>
+      <h2 class="section-title">
+        <span data-en="Social" data-ta="சமூக ஊடக">Social</span>
+        <em data-en=" Feed" data-ta=" ஊட்டம்"> Feed</em>
+      </h2>
+      <p class="section-sub" data-en="Follow the foundation on Facebook and YouTube for live updates, event recordings, and constitutional discourse." data-ta="நேரடி புதுப்பிப்புகள், நிகழ்வு பதிவுகள் மற்றும் அரசியலமைப்பு விவாதங்களுக்கு Facebook மற்றும் YouTube-ல் அறக்கட்டளையை பின்தொடர்க.">Follow the foundation on Facebook and YouTube for live updates, event recordings, and constitutional discourse.</p>
+    </div>
+    <div class="social-feed-grid">
+      <!-- Facebook post mock -->
+      <div class="social-post-card reveal">
+        <div class="social-post-header">
+          <div class="social-platform-badge social-fb">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </div>
+          <span class="social-post-date">Mar 15, 2026</span>
+        </div>
+        <p class="social-post-text" data-en="We are delighted to announce that the 5th Rakesh Endowment Lecture will be held in April 2026 at RMRL, Chennai. Speaker details to follow. Stay tuned!" data-ta="5ஆம் ரகேஷ் நிறுவன சொற்பொழிவு ஏப்ரல் 2026ல் RMRL, சென்னையில் நடைபெறும் என அறிவிப்பதில் மகிழ்ச்சி. பேச்சாளர் விவரங்கள் விரைவில்.">We are delighted to announce that the 5th Rakesh Endowment Lecture will be held in April 2026 at RMRL, Chennai. Speaker details to follow. Stay tuned!</p>
+        <div class="social-post-stats">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg> 142</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> 38</span>
+          <a href="https://www.facebook.com" target="_blank" class="social-view-link" data-en="View on Facebook" data-ta="Facebook-ல் காண்க">View on Facebook</a>
+        </div>
+      </div>
+      <!-- YouTube mock -->
+      <div class="social-post-card reveal reveal-delay-1">
+        <div class="social-post-header">
+          <div class="social-platform-badge social-yt">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            YouTube
+          </div>
+          <span class="social-post-date">Feb 22, 2026</span>
+        </div>
+        <div class="social-video-thumb">
+          <div class="social-video-play">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <span class="social-video-label" data-en="Tamil Moot Court 2026 — Valedictory Ceremony" data-ta="தமிழ் மூட் கோர்ட் 2026 — விடைப்பு விழா">Tamil Moot Court 2026 — Valedictory Ceremony</span>
+        </div>
+        <div class="social-post-stats">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 2.4k views</span>
+          <a href="https://www.youtube.com" target="_blank" class="social-view-link" data-en="Watch on YouTube" data-ta="YouTube-ல் பார்க்கவும்">Watch on YouTube</a>
+        </div>
+      </div>
+      <!-- Facebook post 2 -->
+      <div class="social-post-card reveal reveal-delay-2">
+        <div class="social-post-header">
+          <div class="social-platform-badge social-fb">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </div>
+          <span class="social-post-date">Apr 20, 2025</span>
+        </div>
+        <p class="social-post-text" data-en="The 4th Rakesh Endowment Lecture — 'The 75-Year Journey of the Indian Constitution' — was a historic success. Our deepest gratitude to Justice Jasti Chelameswar and RMRL for a landmark evening." data-ta="4ஆம் ரகேஷ் நிறுவன சொற்பொழிவு — 'இந்திய அரசியலமைப்பின் 75 ஆண்டு பயணம்' — ஒரு வரலாற்று வெற்றியாக அமைந்தது. நீதிபதி ஜஸ்தி சேலமேஸ்வர் மற்றும் RMRL-க்கு நன்றி.">The 4th Rakesh Endowment Lecture — 'The 75-Year Journey of the Indian Constitution' — was a historic success. Our deepest gratitude to Justice Jasti Chelameswar and RMRL for a landmark evening.</p>
+        <div class="social-post-stats">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg> 317</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> 74</span>
+          <a href="https://www.facebook.com" target="_blank" class="social-view-link" data-en="View on Facebook" data-ta="Facebook-ல் காண்க">View on Facebook</a>
+        </div>
+      </div>
+      <!-- YouTube 2 -->
+      <div class="social-post-card reveal reveal-delay-3">
+        <div class="social-post-header">
+          <div class="social-platform-badge social-yt">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            YouTube
+          </div>
+          <span class="social-post-date">Apr 19, 2025</span>
+        </div>
+        <div class="social-video-thumb">
+          <div class="social-video-play">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <span class="social-video-label" data-en="4th Rakesh Endowment Lecture — Full Recording · Red Pix 24x7" data-ta="4ஆம் ரகேஷ் நிறுவன சொற்பொழிவு — முழு பதிவு · Red Pix 24x7">4th Rakesh Endowment Lecture — Full Recording · Red Pix 24x7</span>
+        </div>
+        <div class="social-post-stats">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 5.1k views</span>
+          <a href="https://www.youtube.com" target="_blank" class="social-view-link" data-en="Watch on YouTube" data-ta="YouTube-ல் பார்க்கவும்">Watch on YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="social-follow-strip reveal">
+      <p data-en="Follow us for live event updates and constitutional discourse" data-ta="நேரடி நிகழ்வு புதுப்பிப்புகளுக்கு எங்களை பின்தொடர்க">Follow us for live event updates and constitutional discourse</p>
+      <div class="social-follow-btns">
+        <a href="https://www.facebook.com" target="_blank" class="follow-btn follow-fb">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span data-en="Follow on Facebook" data-ta="Facebook-ல் பின்தொடர்க">Follow on Facebook</span>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="follow-btn follow-yt">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          <span data-en="Subscribe on YouTube" data-ta="YouTube-ல் சந்தா செலுத்துக">Subscribe on YouTube</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COORDINATORS -->
+<section id="coordinators">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Leadership" data-ta="தலைமை">Leadership</p>
+      <h2 class="section-title" data-en="Coordinators" data-ta="ஒருங்கிணைப்பாளர்கள்">Coordinators</h2>
+      <p class="section-sub" data-en="The people behind the Rakesh Law Foundation — dedicated to advancing justice and equity through legal education and constitutional awareness." data-ta="ரகேஷ் சட்ட அறக்கட்டளையின் பின்னணியில் உள்ளவர்கள் — சட்டக் கல்வி மற்றும் அரசியலமைப்பு விழிப்புணர்வு மூலம் நீதி மற்றும் சமத்துவத்தை மேம்படுத்த அர்ப்பணிக்கப்பட்டுள்ளனர்.">The people behind the Rakesh Law Foundation — dedicated to advancing justice and equity through legal education and constitutional awareness.</p>
+    </div>
+    <div class="coordinators-grid">
+      <div class="coordinator-card reveal">
+        <div class="coordinator-avatar">NRE</div>
+        <h3 class="coordinator-name">N.R. Elango</h3>
+        <p class="coordinator-role" data-en="Advocate · Founder" data-ta="வழக்கறிஞர் · நிறுவனர்">Advocate · Founder</p>
+      </div>
+      <div class="coordinator-card reveal reveal-delay-1">
+        <div class="coordinator-avatar">AE</div>
+        <h3 class="coordinator-name">Aruna Elango</h3>
+        <p class="coordinator-role" data-en="Advocate · Co-Founder" data-ta="வழக்கறிஞர் · இணை நிறுவனர்">Advocate · Co-Founder</p>
+      </div>
+      <div class="coordinator-card reveal reveal-delay-2">
+        <div class="coordinator-avatar">RE</div>
+        <h3 class="coordinator-name">Dr. Ragavi Elango</h3>
+        <p class="coordinator-role" data-en="Pulmonologist · Treasurer" data-ta="நுரையீரல் மருத்துவர் · பொருளாளர்">Pulmonologist · Treasurer</p>
+      </div>
+      <div class="coordinator-card reveal reveal-delay-3">
+        <div class="coordinator-avatar">RM</div>
+        <h3 class="coordinator-name">Dr. Ranjith Mari</h3>
+        <p class="coordinator-role" data-en="Periodontist · General Secretary" data-ta="பீரியடோன்டிஸ்ட் · பொதுச் செயலாளர்">Periodontist · General Secretary</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag" data-en="Get In Touch" data-ta="தொடர்பு கொள்ளுங்கள்">Get In Touch</p>
+      <h2 class="section-title">
+        <span data-en="Contact the" data-ta="அறக்கட்டளையை">Contact the</span>
+        <em data-en=" Foundation" data-ta=" தொடர்பு கொள்ளுங்கள்"> Foundation</em>
+      </h2>
+      <p class="section-sub" data-en="For lecture registrations, institutional collaborations, media inquiries, or general correspondence." data-ta="சொற்பொழிவு பதிவுகள், நிறுவன ஒத்துழைப்புகள், ஊடக விசாரணைகள் அல்லது பொது கடிதப்போக்குவரத்திற்கு.">For lecture registrations, institutional collaborations, media inquiries, or general correspondence.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label" data-en="Registered Address" data-ta="பதிவு செய்யப்பட்ட முகவரி">Registered Address</p>
+            <p class="contact-detail-value" data-en="No. 51/11, 7th Avenue, Soundariya Colony,<br>Anna Nagar West Extension,<br>Chennai – 600 101, Tamil Nadu" data-ta="எண். 51/11, 7வது அவென்யூ, சௌந்தரியா காலனி,<br>அண்ணா நகர் மேற்கு நீட்டிப்பு,<br>சென்னை – 600 101, தமிழ்நாடு">No. 51/11, 7th Avenue, Soundariya Colony,<br>Anna Nagar West Extension,<br>Chennai – 600 101, Tamil Nadu</p>
+          </div>
+        </div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label" data-en="Email" data-ta="மின்னஞ்சல்">Email</p>
+            <p class="contact-detail-value"><a href="mailto:dsdinesh2619@gmail.com">dsdinesh2619@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label" data-en="Legal Status" data-ta="சட்ட நிலை">Legal Status</p>
+            <p class="contact-detail-value" data-en="Registered Charitable Trust<br>Reg. under Section 12AB, Income Tax Act" data-ta="பதிவு செய்யப்பட்ட அறப்பணி அறக்கட்டளை<br>வருமான வரிச் சட்டம் 12AB பிரிவின் கீழ் பதிவு செய்யப்பட்டது">Registered Charitable Trust<br>Reg. under Section 12AB, Income Tax Act</p>
+          </div>
+        </div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label" data-en="Annual Event" data-ta="வார்ஷிக நிகழ்வு">Annual Event</p>
+            <p class="contact-detail-value" data-en="Rakesh Endowment Lecture — Every April<br>In collaboration with RMRL, Chennai" data-ta="ரகேஷ் நிறுவன சொற்பொழிவு — ஒவ்வொரு ஏப்ரலிலும்<br>RMRL, சென்னையுடன் இணைந்து">Rakesh Endowment Lecture — Every April<br>In collaboration with RMRL, Chennai</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div>
+              <label class="form-label" data-en="First Name" data-ta="முதல் பெயர்">First Name</label>
+              <input class="form-input" type="text" data-en-placeholder="Your first name" data-ta-placeholder="உங்கள் முதல் பெயர்" placeholder="Your first name" required>
+            </div>
+            <div>
+              <label class="form-label" data-en="Last Name" data-ta="கடைசி பெயர்">Last Name</label>
+              <input class="form-input" type="text" data-en-placeholder="Your last name" data-ta-placeholder="உங்கள் கடைசி பெயர்" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div>
+            <label class="form-label" data-en="Email Address" data-ta="மின்னஞ்சல் முகவரி">Email Address</label>
+            <input class="form-input" type="email" data-en-placeholder="your@email.com" data-ta-placeholder="your@email.com" placeholder="your@email.com" required>
+          </div>
+          <div>
+            <label class="form-label" data-en="Institution / Organisation" data-ta="நிறுவனம் / அமைப்பு">Institution / Organisation</label>
+            <input class="form-input" type="text" data-en-placeholder="School of Excellence in Law" data-ta-placeholder="சட்டத்தில் சிறப்பு பள்ளி" placeholder="School of Excellence in Law">
+          </div>
+          <div>
+            <label class="form-label" data-en="Purpose of Enquiry" data-ta="விசாரணையின் நோக்கம்">Purpose of Enquiry</label>
+            <select class="form-select form-input">
+              <option value="" data-en="Select one..." data-ta="ஒன்றை தேர்ந்தெடுக்கவும்...">Select one...</option>
+              <option data-en="Lecture Series Registration" data-ta="சொற்பொழிவு தொடர் பதிவு">Lecture Series Registration</option>
+              <option data-en="Moot Court Participation" data-ta="மூட் கோர்ட் பங்கேற்பு">Moot Court Participation</option>
+              <option data-en="Institutional Partnership" data-ta="நிறுவன கூட்டு">Institutional Partnership</option>
+              <option data-en="Media & Press Inquiry" data-ta="ஊடக விசாரணை">Media & Press Inquiry</option>
+              <option data-en="Research Collaboration" data-ta="ஆராய்ச்சி ஒத்துழைப்பு">Research Collaboration</option>
+              <option data-en="General Enquiry" data-ta="பொது விசாரணை">General Enquiry</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label" data-en="Message" data-ta="செய்தி">Message</label>
+            <textarea class="form-textarea" data-en-placeholder="Write your message here..." data-ta-placeholder="உங்கள் செய்தியை இங்கே எழுதுங்கள்..." placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="form-submit" data-en="Send Message" data-ta="செய்தி அனுப்புங்கள்">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Rakesh<span> Law</span></div>
+        <p class="footer-tagline" data-en="A legal research and educational trust dedicated to justice and equity — in memory of Rakesh, founded by Senior Advocate N.R. Elango, Chennai, Tamil Nadu." data-ta="நீதி மற்றும் சமத்துவத்திற்கு அர்ப்பணிக்கப்பட்ட சட்ட ஆராய்ச்சி மற்றும் கல்வி அறக்கட்டளை — ரகேஷின் நினைவாக, மூத்த வழக்கறிஞர் என்.ஆர். எழாங்கோவால் நிறுவப்பட்டது.">A legal research and educational trust dedicated to justice and equity — in memory of Rakesh, founded by Senior Advocate N.R. Elango, Chennai, Tamil Nadu.</p>
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a class="social-link" href="mailto:dsdinesh2619@gmail.com" aria-label="Email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a class="social-link" href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title" data-en="Navigation" data-ta="வழிசெலுத்தல்">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="#about" data-en="About & Mission" data-ta="பற்றி மற்றும் நோக்கம்">About & Mission</a></li>
+          <li><a href="#partners" data-en="Partners" data-ta="கூட்டாளிகள்">Partners</a></li>
+          <li><a href="#lectures" data-en="Lecture Archive" data-ta="சொற்பொழிவு காப்பகம்">Lecture Archive</a></li>
+          <li><a href="#upcoming" data-en="Upcoming Event" data-ta="வருங்கால நிகழ்வு">Upcoming Event</a></li>
+          <li><a href="#events" data-en="SOEL & Moot Court" data-ta="SOEL & மூட் கோர்ட்">SOEL & Moot Court</a></li>
+          <li><a href="#resources" data-en="Resources" data-ta="வளங்கள்">Resources</a></li>
+          <li><a href="#coordinators" data-en="Coordinators" data-ta="ஒருங்கிணைப்பாளர்கள்">Coordinators</a></li>
+          <li><a href="#contact" data-en="Contact Us" data-ta="எங்களை தொடர்பு கொள்ளுங்கள்">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title" data-en="Lecture Series" data-ta="சொற்பொழிவு தொடர்">Lecture Series</p>
+        <ul class="footer-links">
+          <li><a href="#lectures" data-en="2025 · 4th Edition" data-ta="2025 · 4ஆம் பதிப்பு">2025 · 4th Edition</a></li>
+          <li><a href="#lectures" data-en="2024 · 3rd Edition" data-ta="2024 · 3ஆம் பதிப்பு">2024 · 3rd Edition</a></li>
+          <li><a href="#lectures" data-en="2023 · 2nd Edition" data-ta="2023 · 2ஆம் பதிப்பு">2023 · 2nd Edition</a></li>
+          <li><a href="#lectures" data-en="2022 · 1st Edition" data-ta="2022 · 1ஆம் பதிப்பு">2022 · 1st Edition</a></li>
+          <li><a href="#upcoming" data-en="Next Lecture (2026)" data-ta="அடுத்த சொற்பொழிவு (2026)">Next Lecture (2026)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title" data-en="Registered Address" data-ta="பதிவு முகவரி">Registered Address</p>
+        <ul class="footer-links">
+          <li><a href="#contact">No. 51/11, 7th Avenue</a></li>
+          <li><a href="#contact">Soundariya Colony</a></li>
+          <li><a href="#contact">Anna Nagar West Extension</a></li>
+          <li><a href="#contact">Chennai – 600 101</a></li>
+          <li><a href="mailto:dsdinesh2619@gmail.com">dsdinesh2619@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-en="© 2025 Rakesh Law Foundation, Chennai. All Rights Reserved. Registered Charitable Trust." data-ta="© 2025 ரகேஷ் சட்ட அறக்கட்டளை, சென்னை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டுள்ளன. பதிவு செய்யப்பட்ட அறப்பணி அறக்கட்டளை.">© 2025 Rakesh Law Foundation, Chennai. All Rights Reserved. Registered Charitable Trust.</p>
+      <div class="footer-legal">
+        <a href="#" data-en="Privacy" data-ta="தனியுரிமை">Privacy</a>
+        <a href="#" data-en="Terms" data-ta="விதிமுறைகள்">Terms</a>
+        <a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" data-en="Message Sent Successfully" data-ta="செய்தி வெற்றிகரமாக அனுப்பப்பட்டது">Message Sent Successfully</div>
+
+<script src="script.js"></script>
+</body>
+</html>
